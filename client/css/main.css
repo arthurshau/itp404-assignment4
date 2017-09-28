@@ -1,0 +1,17 @@
+#searches {
+	float: right;
+}
+
+#repos {
+	float: left;
+}
+
+#input{
+	left: 42%;
+	position: fixed;
+}
+
+#search-button {
+	left: 53%;
+	position: fixed;
+}

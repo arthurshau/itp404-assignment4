@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">  
+  <title>ITP404 Assignment 4</title>
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+
+<input type="text" id="input" placeholder="Enter a Github username...">
+<button id="search-button">Search</button>
+
+<div id="repos" class="repos"></div>
+
+<div id="searches" class="searches"></div>
+
+<script id = "search-template" type="text/x-handlebars-template">
+  <h1>Search History</h1>
+  {{#each searches}}
+    <div class="search">
+      <p>{{createdAt}}</p>
+      <p>{{term}}</p>
+    </div>
+  {{/each}}
+</script>
+
+<script id="repos-template" type="text/x-handlebars-template">
+  <h1>Repos</h1>
+  {{#each repos}}
+    <div class="repo">
+      <p>{{title}}</p>
+    </div>
+  {{/each}}
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
+<script src="src/main.js"></script>
+</body>
